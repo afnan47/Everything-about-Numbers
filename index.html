@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Number Facts</title>
+</head>
+
+<body class="bg-dark">
+    <h1 id = "heading" class = "display-3 text-center">EVERYTHING BUT NUMBERS</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h1>Number Facts</h1>
+                    <p>Enter a number and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" id="numberInput"
+                        placeholder="Enter any number...">
+                    <div id="fact" class="card-body">
+                        <h4 class="card-title">
+                            Number Fact
+                        </h4>
+                        <p id="factText" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mx-auto">
+                <div class="card bg-secondary text-white mt-5 p-4">
+                    <h1>Year Facts</h1>
+                    <p>Enter a year and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" placeholder = "Enter any year..." id="yearInput">
+                    <div id="yfact" class="card-body">
+                        <h4 class= "card-title">
+                            Year Fact
+                        </h4>
+                        <p id="yfactText" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mx-auto">
+                <div class="card bg-danger text-white mt-5 p-4">
+                    <h1>Math Facts</h1>
+                    <p>Enter a number and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" id="mathInput"
+                        placeholder="Enter any number...">
+                    <div id="mfact" class="card-body">
+                        <h4 class="card-title">
+                            Math Fact
+                        </h4>
+                        <p id="mfactText" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mx-auto">
+                <div class="card bg-warning text-white mt-5 p-4">
+                    <h1>Date Facts</h1>
+                    <p>Enter a date(ddmm) and get a date fact</p>
+                    <input type="number" class="form-control form-control-lg" id="dateInput"
+                        placeholder="Enter any number...">
+                    <div id="dfact" class="card-body">
+                        <h4 class="card-title">
+                            Date Fact
+                        </h4>
+                        <p id="dfactText" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
