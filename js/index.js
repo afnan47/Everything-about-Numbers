@@ -12,7 +12,7 @@ numberInput.addEventListener('input', getFactFetch);
 function getFactFetch() {
     let number = numberInput.value;
     if (number != '') {
-        fetch('https://numbersapi.com/' + number +"/")
+        fetch('http://numbersapi.com/' + number +"/")
             .then(response => response.text())
             .then(data => {
                 fact.style.display = 'block';
@@ -35,7 +35,7 @@ yearInput.addEventListener('input', getYearFact);
 async function getYearFact(){
     let year = yearInput.value;
     if(year != ''){
-        fetch('https://numbersapi.com/' + year + "/year/")
+        fetch('http://numbersapi.com/' + year + "/year/")
         .then(response => response.text())
         .then(data => {
             yearFact.style.display = 'block';
@@ -59,7 +59,7 @@ mathInput.addEventListener('input', getMathFact);
 function getMathFact(){
     let math = mathInput.value;
     if(math != ''){
-        fetch('https://numbersapi.com/' + math + "/math/")
+        fetch('http://numbersapi.com/' + math + "/math/")
         .then(response => response.text())
         .then(data => {
             mathFact.style.display = 'block';
@@ -83,7 +83,7 @@ dateInput.addEventListener('input', getdateFact);
 function getdateFact(){
     let date = dateInput.value;
     if(date != '' && date.length == 4){
-        fetch('https://numbersapi.com/' + date.slice(2,4) + "/" + date.slice(0,2) + "/date/")
+        fetch('http://numbersapi.com/' + date.slice(2,4) + "/" + date.slice(0,2) + "/date/")
         .then(response => response.text())
         .then(data => {
             dateFact.style.display = 'block';
